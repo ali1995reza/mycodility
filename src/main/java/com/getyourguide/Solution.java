@@ -34,7 +34,7 @@ class Solution {
 
         @Override
         public int compareTo(ParsedPhotoName o) {
-            return (int) (this.time - o.time);
+            return Long.compare(this.time, o.time);
         }
 
         @Override
